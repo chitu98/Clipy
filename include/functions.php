@@ -48,10 +48,10 @@ function getallclips(){
 
             <div class="col-sm-4 mt-2">
                 <form method="post" action="modify.php">
-                    <div class="card">
+                    <div class="card" >
                         <div class="card-header">
                             <input type="hidden" name="id" value="<?=htmlspecialchars(trim($row['id']))?>">
-                            <input type="title" class="form-control title-card" placeholder="Title" name="title" value="<?=htmlspecialchars(trim($row['title']))?>" readonly>
+                            <input type="title" class="form-control title-card" placeholder="Title" name="title" value="<?=htmlspecialchars(trim($row['titfle']))?>" readonly>
                             
                             <a class="btn btn-sm btn-danger float-right"  name="delete" 
                             href="delete.php?id=<?=htmlspecialchars(trim($row['id']))?>"
